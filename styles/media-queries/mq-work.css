@@ -1,0 +1,464 @@
+/* Featured Projects */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-stack {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        perspective: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 0;
+    }
+
+    .card {
+        position: relative;
+        width: 100%;
+        height: auto;
+        min-height: 400px;
+        padding: 25px;
+        transform: none !important;
+        opacity: 1 !important;
+        z-index: auto !important;
+        transition: none;
+    }
+
+    .card.position-0,
+    .card.position-1,
+    .card.position-2,
+    .card.position-3,
+    .card.position-4 {
+        transform: none !important;
+        opacity: 1 !important;
+    }
+
+    .nav-buttons {
+        flex-direction: row;
+        order: -1;
+    }
+
+    .job-title {
+        font-size: 18px;
+    }
+
+    .card-description {
+        font-size: 13px;
+    }
+}
+
+
+
+
+/* WORK MAIN */
+
+/* Work Section */
+
+#work 
+{
+    min-height: 100dvh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--background);
+    position: relative;
+    padding: 2rem;
+}
+
+.work-title
+{
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+
+    font-size: 3em;
+    padding-right: 1.2rem;
+    border-right: 2px solid black;
+    color: black; 
+}
+
+
+.work-container 
+{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+    width: 80vw;
+    height: 75vh;
+}
+
+.card-stack  /* Mimic the phone screen */
+{
+    position: relative;
+    width: 400px;
+    height: 600px;
+    perspective: 2000px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.card {
+    position: absolute;
+    width: 50vw;
+    height: 500px;
+    background: white;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); 
+    /* pointer-events: auto; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+/* Card 0 (Research Math IA) */
+
+.research-card-header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: pink;
+
+    position: relative;
+    width: 100%;
+    height: 12%;
+
+}
+
+.research-card-title
+{
+    width: auto;
+    height: auto;
+    
+    font-size: 1.6em;
+    font-weight: 550;
+    text-decoration: underline;   
+    
+    /* background-color: var(--container2);
+    padding: 0.5rem 1rem;
+    border-radius: 10px; */
+
+}
+
+.research-card-logo
+{
+    background-color: var(--container2);
+    width: auto;
+    height: auto;
+
+    padding: 0.5rem 1rem;
+    border-radius: 20px;    
+
+    font-size: 1.2em;
+}
+
+
+.research-card-details
+{
+    width: 100%;
+    height: 75%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.research-card-details-container-1
+{
+    width: 50%;
+    height: 100%;
+    background-color: var(--container2);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 2rem;
+}
+
+.abstract-title
+{
+    width: 100%;
+    height: auto;
+
+    border-radius: 20px 20px 0 0;
+    padding: 0.5rem 0;
+    margin: 0 auto;
+    font-size: 1.5em;
+    font-weight: 600;
+    background-color: pink;
+
+    text-align: center;
+}
+
+
+.abstract-content
+{
+    width: 100%;
+    height: 80%;
+
+    padding: 0.5rem 0;
+    margin: 0 auto;
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: left;
+
+    background-color: pink;
+    padding: 0 1rem;
+
+    text-align: justify;
+}
+
+
+
+.research-card-details-container-right
+{
+    width: 45%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.research-card-details-container-2
+{
+    width: 100%;
+    height: 50%;
+    background-color: var(--container2);
+    border-radius: 20px;    
+    border: 2px solid var(--container2);
+    border-bottom: none;
+}
+
+/* Table */
+
+
+.container-2-score-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container-2-score-table td 
+{
+    padding: 12px 16px;
+}
+
+.container-2-score-table td:first-child 
+{
+    width: 35%;
+    background-color: color-mix(in srgb, var(--container2) 90%, black);
+    border-bottom: 2px solid var(--container2);    
+    border-right: 2px solid var(--container2);
+}
+
+.container-2-score-table td:last-child 
+{
+    background-color: white;
+    color: #333;
+    border-bottom: 2px solid var(--container2);
+}
+
+
+/* Container 3 (Link to Report) */
+.research-card-details-container-3
+{
+    width: auto;
+    height: auto;
+    background-color: var(--container2);
+    border-radius: 20px;   
+    
+    align-self: flex-end;
+    padding: 1rem 2rem;
+
+    transition: background-color 0.4s ease;    
+}
+
+.research-card-details-container-3 a
+{
+    color: black;
+    text-decoration: none;
+    transition: color 0.4s ease;
+    font-style: italic;
+}
+
+.research-card-details-container-3:hover
+{
+    cursor: pointer;
+    background-color: color-mix(in srgb, var(--container2) 90%, black);
+}
+
+.research-card-details-container-3:hover a
+{
+    cursor: pointer;
+    color: white;
+}
+
+
+/* Card 1 (Research Chem EE) */
+
+
+
+/* Card 2 (Research Econs Paper) */
+
+
+
+/* Card 3 (Project Spotify) */
+
+
+
+/* Card 4 (Project Seva Samithi) --> Seeking Permissions (hover) */
+.research-card-details-container-3-IVSS
+{
+    width: auto;
+    height: auto;
+    background-color: red;
+    border-radius: 20px;   
+    
+    align-self: flex-end;
+    padding: 1rem 2rem;
+
+    transition: background-color 0.4s ease, width 0.4s ease;    
+}
+
+.research-card-details-container-3-IVSS a
+{
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}
+
+
+/* Cards' vertical stacking */
+.card.position-0 {
+    transform: translateY(0) translateZ(0) scale(1);
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    filter: blur(0px);
+}
+
+.card.position-1 {
+    transform: translateY(-70px) translateZ(-80px) scale(0.95);
+    z-index: 4;
+    opacity: 0.8;
+    pointer-events: none;
+    filter: blur(3px);
+}
+
+.card.position-2 {
+    transform: translateY(-140px) translateZ(-160px) scale(0.9);
+    z-index: 3;
+    opacity: 0.65;
+    pointer-events: none;
+    filter: blur(3px);
+}
+
+.card.position-3 {
+    transform: translateY(-210px) translateZ(-240px) scale(0.85);
+    z-index: 2;
+    opacity: 0.5;
+    pointer-events: none;
+    filter: blur(3px);
+}
+
+.card.position-4 {
+    /* transform: translateY(-280px) translateZ(-320px) scale(0.8);
+    z-index: 1;
+    opacity: 0.35;
+    pointer-events: auto; */
+
+    display: none;
+}
+
+/* END Cards' Vertical Stacking */
+
+
+/* Card content */
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+/* Navigation buttons */
+.nav-buttons 
+{
+    position: relative;    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    width: auto;
+    z-index: 999;
+}
+
+.nav-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+
+    background: white;
+    color: var(--button);
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.nav-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    background: var(--button);
+    color: white;
+}
+
+
+
+
+#work
+{
+    border-bottom: 2px solid black;
+}

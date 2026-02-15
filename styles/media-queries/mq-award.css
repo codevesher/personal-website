@@ -1,0 +1,368 @@
+
+#work
+{
+    border-bottom: 2px solid black;
+}
+
+
+/* Awards Section */
+
+#awards 
+{
+    min-height: 100dvh;
+    width: 100%;
+    padding: 8rem 2rem 2rem 8rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--background);
+    position: relative;
+}
+
+
+.awards-title
+{
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+
+    font-size: 3em;
+    padding-right: 1.2rem;
+    border-right: 2px solid black;
+    color: black; 
+}
+
+/* Creating an S Shape */
+
+.award-row1, .award-row2, .award-row3, .award-row4
+{
+    width: 62vw;
+    height: 20vh;
+    position: relative;
+    background: var(--background);
+} 
+
+.award-row0
+{
+    width: 62vw;
+    height: auto;
+}
+
+.award-row2
+{
+    height: 25vh;
+}
+
+.award-row1::before,
+.award-row2::before,
+.award-row3::before,
+.award-row4::before
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 5px; /* This controls the border thickness */
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.award-row1
+{
+    border-radius: 20px 0 0 20px;
+}
+
+.award-row1::before
+{
+    background: linear-gradient(to right, pink, transparent);
+    border-radius: 20px 0 0 20px;
+}
+
+.award-row2
+{
+    border-radius: 0 20px 20px 0;
+}
+
+.award-row2::before
+{
+    background: linear-gradient(to left, pink, transparent);
+    border-radius: 0 20px 20px 0;
+}
+
+/* .award-row3
+{
+    border-radius: 20px 0 0 20px;
+}
+
+.award-row3::before
+{
+    background: linear-gradient(to right, pink, transparent);
+    border-radius: 20px 0 0 20px;
+} */
+
+/* .award-row4
+{
+    border-radius: 0 20px 20px 0;
+}
+
+.award-row4::before
+{
+    background: linear-gradient(to left, pink, transparent);
+    border-radius: 0 20px 20px 0;
+} */
+
+
+/* END Creating S Shape */
+
+
+
+
+/* Main Award Rows */
+.award-main-row0
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.award-main-row1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.award-main-row2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.award-main-row3
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.award-main-row4
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Left and Right Columns */
+.award-row0-left, .award-row0-right
+{
+    width: 20vw;
+    height: 20vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.award-container-left, .award-container-right
+{
+    position: relative;
+    height: auto;
+    width: fit-content;
+    padding: 1rem 1rem;
+    background-color: pink;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    text-align: center;
+}
+
+
+
+/* Row 0 */
+
+.award-row0
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 5rem;
+    margin-left: 6rem;
+}
+
+
+.award-container-bottom
+{
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    padding: 1rem 1rem;
+    background-color: pink;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 18px;
+}
+
+.award-container-bottom::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid pink;
+    z-index: 999;
+}
+
+/* Row 1 - left */
+
+
+.award-container-left
+{
+    align-self: flex-end;
+    margin-right: 15px;
+}
+
+.award-container-left::after 
+{
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    left: 100%;
+    transform: translateY(50%) rotate(-90deg);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid pink;
+    z-index: 999;
+    margin-left: -8px; 
+}  
+
+/* Row 2 - Top */
+.award-row2
+{   
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+}
+
+
+.award-container-top
+{
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    padding: 1rem 1rem;
+    background-color: pink;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 19px;
+}
+
+.award-container-top::after 
+{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid pink;
+    z-index: 999;
+}
+
+
+/* Row 2 - Right */
+.award-container-right
+{
+    align-self: flex-start;
+    margin-top: 10%;
+    margin-left: 15px;
+}
+
+.award-container-right::after {
+    content: '';
+    position: absolute;
+    bottom: 50%; 
+    right: 100%; /* Position at the right edge of container */
+    transform: translateY(50%) rotate(90deg); /* Center and point right */
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid pink;
+    z-index: 999;
+    margin-right: -8px; 
+}  
+
+
+/* Row 3 - Top  */
+.award-row3
+{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    margin-right: 6rem;
+
+    justify-content: flex-end;
+}
+
+
+.award-container-top
+{
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    padding: 1rem 1rem;
+    background-color: pink;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 19px;
+}
+
+.award-container-top::after 
+{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid pink;
+    z-index: 999;
+}

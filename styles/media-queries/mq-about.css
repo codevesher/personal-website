@@ -1,0 +1,512 @@
+
+/* About Section */
+#about {
+    min-height: 100dvh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--background);
+    position: relative;
+    padding: 2rem;
+}
+
+.about-title
+{
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+
+    font-size: 3em;
+    padding-right: 1.2rem;
+    border-right: 2px solid black;
+    color: black; 
+}
+
+.about-container {
+    position: relative;
+    width: 70vw;
+    height: 60vh;
+    background-color: var(--container1);
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+}
+
+
+
+.work-content
+{
+    width: 100%;
+    height: 100%;
+    background-color: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+.left-side
+{
+    width: 50%;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+
+.left-side-title
+{
+    width: 100%;
+    height: auto;
+
+    font-size: 3em;
+}
+
+.work-content-description
+{
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+    background-color: var(--container2);
+    padding: 1.8rem 2rem;
+}
+
+.work-content-description
+{
+    font-size: 1.45rem; 
+    font-weight: 400;
+    line-height: 1.7; 
+    color: #424245; 
+    max-width: 720px; 
+    text-align: justify;
+
+    overflow-y: hidden; /* Remove */
+}
+
+
+
+.work-content-information
+{
+    width: 45%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.work-content-education
+{
+    width: 100%;
+    height: auto;
+    background-color: var(--container2);
+    border-radius: 20px;
+    padding: 20px 0 0 20px;
+
+}
+
+
+.work-content-education-title
+{
+    font-size: 1.5em;
+    font-weight: 550;
+    margin-bottom: 1rem;
+}
+
+
+.work-content-education-notes-1
+{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0 0 0.5rem 1.5rem;
+    font-style: italic;
+}
+.work-content-education-notes-2
+{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0 0 0.5rem 1.5rem;
+    font-style: italic;
+}
+.work-content-education-notes-3
+{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0 0 0.5rem 1.5rem;
+    font-style: italic;
+}
+.work-content-education-notes-4
+{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0 0 1rem 1.5rem;
+    font-style: italic;
+}
+
+
+.work-content-technical-skills
+{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.technical-languages
+{
+    width: 45%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: var(--container2);
+    padding: 1rem;
+}
+
+.technical-languages-title
+{
+    font-size: 1.2em;
+    font-weight: 550;
+    margin-bottom: 0.5rem;    
+}
+
+.technical-languages-p-1
+{
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 0.25rem;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.technical-languages-p-2
+{
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.technical-languages-p-3
+{
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 0.25rem;
+    font-style: italic;
+    text-decoration: underline;    
+}
+.technical-languages-p-4
+{
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.spoken-languages-container
+{
+    width: 45%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: var(--container2);
+    padding: 1rem;
+}
+
+.spoken-languages-title
+{
+    font-size: 1.2em;
+    font-weight: 550;
+    margin-bottom: 0.5rem;    
+}
+
+
+.spoken-languages-p-1
+{
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 0.25rem;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.spoken-languages-p-2
+{
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.spoken-languages-p-3
+{
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 0.25rem;
+    font-style: italic;
+    text-decoration: underline;    
+}
+.spoken-languages-p-4
+{
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+
+
+
+.personal-content
+{
+    width: 100%;
+    height: 100%;
+    background-color: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+}
+
+
+.personal-content-description
+{
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+    background-color: var(--container2);
+    padding: 1.8rem 2rem;
+}
+
+.personal-content-description
+{
+    font-size: 1.45rem; 
+    font-weight: 400;
+    line-height: 1.7; 
+    color: #424245; 
+    max-width: 720px; 
+    text-align: justify;
+
+    overflow-y: hidden; /* Remove */
+}
+
+
+.personal-content-information
+{
+    width: 45%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.personal-content-hobbies
+{
+    width: 100%;
+    height: auto;
+    background-color: var(--container2);
+    border-radius: 20px;
+    padding: 20px 0 0 20px;
+
+}
+
+
+.personal-content-hobbies-title
+{
+    font-size: 1.5em;
+    font-weight: 550;
+    margin-bottom: 1rem;
+}
+
+
+.personal-content-hobbies-notes-1
+{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0 0 0.5rem 1.5rem;
+    font-style: italic;
+}
+.personal-content-hobbies-notes-2
+{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0 0 0.5rem 1.5rem;
+    font-style: italic;
+}
+.personal-content-hobbies-notes-3
+{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0 0 0.5rem 1.5rem;
+    font-style: italic;
+}
+.personal-content-hobbies-notes-4
+{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0 0 1rem 1.5rem;
+    font-style: italic;
+}
+
+.personal-content-blog
+{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    background-color: var(--container2);
+
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+/* Animation for About Section */
+
+.about-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+}
+
+.work-content
+{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.work-content.hiding
+{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.personal-content
+{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.personal-content.active
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+.about-container
+{
+    overflow-y: hidden;
+}
+
+
+
+/* Toggle Container */
+.toggle-container {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--container1);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.toggle-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--boldtext);
+    transition: color 0.3s ease;
+    user-select: none;
+}
+
+/* Highlight active label */
+.toggle-label:first-child {
+    color: var(--button); /* Work is active by default */
+}
+
+/* Toggle Switch */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 28px;
+    cursor: pointer;
+}
+
+/* Hide default checkbox */
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Slider background pill shape after selecting work*/
+.toggle-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--button);
+    border-radius: 34px;
+    transition: 0.4s;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Slider circle thingy */
+.toggle-slider:before {
+    content: "";    
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Checked state - move slider */
+input:checked + .toggle-slider {
+    background-color: var(--container2); /* Personal mode color */
+}
+
+input:checked + .toggle-slider:before {
+    transform: translateX(27px);
+}
+
+/* Update label colors based on state */
+.about-container.personal-mode .toggle-label:first-child {
+    color: var(--normaltext);
+}
+
+.about-container.personal-mode .toggle-label:last-child {
+    color: var(--container2);
+}
+
+#about
+{
+    border-bottom: 2px solid black;
+}
