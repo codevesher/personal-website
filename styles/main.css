@@ -2240,7 +2240,7 @@ input:checked + .toggle-slider:before { transform: translateX(27px); }
     .research-card-title { font-size: 1.1em; }
     .research-card-logo { font-size: 0.85em; padding: 0.3rem 0.65rem; }
     .abstract-title { font-size: 1.1em; }
-    .research-card-details-container-1.lse { height: 60%; }
+    /* .research-card-details-container-1.lse { height: 60%; } */
     .abstract-content { font-size: 0.9em; line-height: 1.5; padding: 0 0.75rem; }
     .italic-needed { font-size: 1rem; }
 
@@ -2263,6 +2263,13 @@ input:checked + .toggle-slider:before { transform: translateX(27px); }
     .nav-btn { width: 42px; height: 42px; font-size: 20px; }
 }
 
+@media (max-width: 500px)
+{
+    .card
+    {
+        height: 550px;
+    }
+}
 
 /* --- Awards --- */
 
@@ -2309,6 +2316,7 @@ input:checked + .toggle-slider:before { transform: translateX(27px); }
 
     .timeline-award-content { max-width: 100%; }
 }
+
 
 
 
