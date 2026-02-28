@@ -2221,7 +2221,7 @@ input:checked + .toggle-slider:before { transform: translateX(27px); }
     .nav-btn, .nav-btn:hover { box-shadow: 0 0 0 0; }
 }
 
-@media (max-width: 800px) 
+@media (max-width: 950px) 
 {
     #work { padding: 1rem; padding-top: 1.5rem; overflow: hidden; }
 
@@ -2316,6 +2316,7 @@ input:checked + .toggle-slider:before { transform: translateX(27px); }
 
     .timeline-award-content { max-width: 100%; }
 }
+
 
 
 
